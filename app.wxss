@@ -1,0 +1,10 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: Open Sans, Arial, Helvetica, Segoe UI Symbol, Segoe MDL2 Assets, 微软雅黑, Microsoft YaHei, Hei SC, sans-serif;
+}
