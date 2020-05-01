@@ -1,0 +1,128 @@
+/* pages/products/products.wxss */
+.container {
+  align-items: flex-start;
+}
+
+.bottom-tab {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: white;
+}
+
+.buy-btn {
+  height: 100%;
+  width: 230rpx;
+  text-align: center;
+  float: right;
+  background-color: red;
+  color: white;
+  padding-top: 25rpx;
+  font-size: 35rpx;
+}
+
+.save {
+  float: left;
+  width: 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}
+
+.save-img {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.save-text {
+  font-size: 23rpx;
+}
+
+.product-img {
+  width: 70%;
+  margin: 20rpx auto;
+}
+
+.product-title {
+  margin-top: 20rpx;
+  float: left;
+  font-size: 35rpx;
+}
+
+.price {
+  color: red;
+  font-size: 40rpx;
+  margin: 20rpx;
+}
+
+.msg {
+  margin-left: 40rpx;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+.price-bef {
+  color: #9c9c9c;
+  font-size: 30rpx;
+}
+
+.sale {
+  width: 90%;
+  margin: 40rpx auto;
+  font-size: 35rpx;
+}
+
+.sale-text {
+  float: left;
+}
+
+.to-sale {
+  float: right;
+}
+
+.comments {
+  width: 90%;
+  margin: 10rpx auto;
+  font-size: 35rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding-bottom: 20rpx;
+}
+
+.comments-text {
+  float: left;
+}
+
+.to-comments {
+  float: right;
+  color: red;
+}
+.user-name {
+  color: #9c9c9c;
+  font-size: 30rpx;
+  display: block;
+}
+.user-comment {
+  font-size: 30rpx;
+}
+.comment {
+  width: 90%;
+  margin: 10rpx auto;
+}
+.title {
+  font-size: 35rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid red;
+  margin-bottom: 20rpx;
+}
+.detail {
+  margin: 20rpx auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

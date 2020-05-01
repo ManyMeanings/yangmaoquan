@@ -18,5 +18,10 @@ Page({
     })
     
   },
+  click: function (option) {
+    wx.navigateTo({
+      url: '/pages/products/products',
+    })
+  },
   
 })

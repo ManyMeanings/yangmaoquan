@@ -11,24 +11,24 @@
 	</view>
 	<view class="buttons">
 		<view class="button">
-			<image src="/images/index_HL.png" class="button-image" mode="scaleToFill"></image>
+			<image src="/images/icon1.JPG" class="button-image" mode="scaleToFill"></image>
 			<text class="button-text">商品推荐</text>
 		</view>
 		<view class="button">
-			<image src="/images/index_HL.png" class="button-image" mode="scaleToFill"></image>
+			<image src="/images/icon2.JPG" class="button-image" mode="scaleToFill"></image>
 			<text class="button-text">领券出行</text>
 		</view>
 		<view class="button">
-			<image src="/images/index_HL.png" class="button-image" mode="scaleToFill"></image>
+			<image src="/images/icon3.JPG" class="button-image" mode="scaleToFill"></image>
 			<text class="button-text">我的券包</text>
 		</view>
 		<view class="button">
-			<image src="/images/index_HL.png" class="button-image" mode="scaleToFill"></image>
+			<image src="/images/icon4.JPG" class="button-image" mode="scaleToFill"></image>
 			<text class="button-text">疯抢榜</text>
 		</view>
 	</view>
 	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;猜你喜欢</text>
-	<view class="love-items">
+	<scroll-view scroll-x="true" class="love-items">
 		<view class="love-item">
 			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
 			<text class="love-title">kill la kill</text>
@@ -61,10 +61,17 @@
 				<text class="extra-msg">全网最低</text>
 			</view>
 		</view>
-
-	</view>
+		<view class="love-item">
+			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
+			<text class="love-title">kill la kill</text>
+			<view class="love-msg">
+				<text class="love-money">¥100</text>
+				<text class="extra-msg">全网最低</text>
+			</view>
+		</view>
+	</scroll-view>
 	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;领券资讯</text>
-	<view class="news-items">
+	<view class="news-items" bindtap="click">
 		<view class="news-item">
 			<image src="/images/test.jpg" mode="scaleToFill" class="news-image"></image>
 			<text class="news-title">kill la kill</text>

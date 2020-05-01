@@ -24,8 +24,8 @@
   
 }
 .button-image {
-  width: 70rpx;
-  height: 70rpx;
+  width: 100rpx;
+  height: 90rpx;
 }
 .button-text {
   font-size: 24rpx;
@@ -47,24 +47,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  white-space: nowrap;
   
 }
 .love-item {
-  width: 24%;
+  width: 25%;
   background-color: #F2F2F2;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-
+  display: inline-block;
+  margin-top: 20rpx;
 }
 .love-image {
   width: 150rpx;
   height: 150rpx;
+  display: block;
 }
 .love-title {
   font-size: 27rpx;
   color: #747192;
+  display: block;
 }
 .love-money {
   font-size: 20rpx;
@@ -79,6 +83,9 @@
 .love-msg {
   display: flex;
   justify-content: space-between;
+  display: block;
+  position: relative;
+  top: -15rpx;
 }
 
 .news-items {
@@ -87,6 +94,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 20rpx;
 }
 .news-item {
   width: 48%;
@@ -121,4 +129,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20rpx;
 }

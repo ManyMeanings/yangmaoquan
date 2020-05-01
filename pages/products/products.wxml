@@ -1,0 +1,34 @@
+<!--pages/products/products.wxml-->
+<view class="container">
+	<image class="product-img" src="/images/test.jpg"></image>
+	<view class="msg">
+		<text class="product-title">KILL LA KILL</text>
+		<text class="price">¥60</text>
+		<text class="price-bef">原价：¥86</text>
+	</view>
+	<view class="sale">
+		<text class="sale-text">优惠</text>
+		<text class="to-sale">></text>
+	</view>
+	<view class="comments">
+		<text class="comments-text">好友评价</text>
+		<text class="to-comments">查看全部></text>
+	</view>
+	<view class="comment">
+		<text class="user-name">潇潇**</text>
+		<text class="user-comment">质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错</text>
+	</view>
+</view>
+<view class="detail">
+<text class="title">商品详情</text>
+<image class="product-img" src="/images/test.jpg"></image>
+<image class="product-img" src="/images/test.jpg"></image>
+<image class="product-img" src="/images/test.jpg"></image>
+</view>
+<view class="bottom-tab">
+	<view class="save">
+		<image src="/images/save.png" mode="scaleToFill" class="save-img" mode="aspectFit"></image>
+		<text class="save-text">收藏</text>
+	</view>
+	<view class="buy-btn">领券购买</view>
+</view>

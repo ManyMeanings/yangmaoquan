@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/users/users"
+    "pages/users/users",
+    "pages/products/products"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,17 +11,20 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "/images/index.png",
-      "selectedIconPath": "/images/index_HL.png"
-    }, {
-      "pagePath": "pages/users/users",
-      "text": "我的",
-      "iconPath": "/images/users.png",
-      "selectedIconPath": "/images/users_HL.png"
-    }],
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_HL.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "我的",
+        "iconPath": "/images/users.png",
+        "selectedIconPath": "/images/users_HL.png"
+      }
+    ],
     "selectedColor": "#FE7584",
     "color": "#CBCBD2",
     "backgroundColor": "white",
