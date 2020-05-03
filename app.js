@@ -2,6 +2,9 @@
 App({   
   onLaunch: function () {
       var openId = (wx.getStorageSync('openId'))        
+      wx.request({
+        url: 'url',
+      })
       if (openId) {
       wx.getUserInfo({  
         success: function (res) {
@@ -84,8 +87,10 @@ App({
         }
       })       
     }},
+    
   globalData: {
     info:"",
-    product_array:""
+    product_array:"",
+    jd_product_array:""
   }
 })
