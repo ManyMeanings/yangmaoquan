@@ -1,5 +1,4 @@
 //app.js
-
 App({   
   onLaunch: function () {
       var openId = (wx.getStorageSync('openId'))        
@@ -25,7 +24,7 @@ App({
               withCredentials: true,
               success: function (res_user) {
                 wx.request({                     //后台接口地址
-                  url: 'http://localhost/wx.login.php',
+                  url: 'http://tp.adplay.ink/wx.login.php',
                   data: {
                     code: res.code,
                   },
@@ -53,7 +52,7 @@ App({
                                     withCredentials: true,
                                     success: function (res_user) {
                                       wx.request({
-                                       url: 'http://localhost/wx.login.php',
+                                       url: 'http://tp.adplay.ink/wx.login.php',
                                         data: {
                                           code: res_login.code,
                                           encryptedData: res_user.encryptedData,
@@ -88,7 +87,5 @@ App({
   globalData: {
     info:"",
     product_array:""
-
-
   }
 })
