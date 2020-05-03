@@ -1,4 +1,5 @@
 //app.js
+
 App({   
   onLaunch: function () {
       var openId = (wx.getStorageSync('openId'))        
@@ -87,5 +88,7 @@ App({
   globalData: {
     info:"",
     product_array:""
+
+
   }
 })

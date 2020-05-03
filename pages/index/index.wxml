@@ -71,31 +71,13 @@
 		</view>
 	</scroll-view>
 	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;领券资讯</text>
-	<view class="news-items" bindtap="click">
-		<view class="news-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="news-image"></image>
-			<text class="news-title">kill la kill</text>
-			<text class="money1">¥99</text>
+	<view class="news-items">
+		<view class="news-item" bindtap="click" wx:for="{{product_array}}" wx:key="id" data-name="{{item.goods_name}}" data-id="{{item.goods_id}}" data-img="{{item.goods_image_url}}" data-pre="{{item.min_group_price}}" data-price="{{item.current_price}}">
+			<image src="{{item.goods_image_url}}" mode="scaleToFill" class="news-image"></image>
+			<text class="news-title">{{item.goods_name}}</text>
+			<text class="money1">¥{{item.min_group_price}}</text>
 			<view class="extra-msg2">
-				<text class="money2">¥199.99</text>
-				<text class="buy-number">99位好友已购买</text>
-			</view>
-		</view>
-		<view class="news-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="news-image"></image>
-			<text class="news-title">kill la kill</text>
-			<text class="money1">¥99</text>
-			<view class="extra-msg2">
-				<text class="money2">¥199.99</text>
-				<text class="buy-number">99位好友已购买</text>
-			</view>
-		</view>
-		<view class="news-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="news-image"></image>
-			<text class="news-title">kill la kill</text>
-			<text class="money1">¥99</text>
-			<view class="extra-msg2">
-				<text class="money2">¥199.99</text>
+				<text class="money2">¥{{item.current_price}}</text>
 				<text class="buy-number">99位好友已购买</text>
 			</view>
 		</view>

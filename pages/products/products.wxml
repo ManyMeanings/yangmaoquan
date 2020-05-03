@@ -1,10 +1,10 @@
 <!--pages/products/products.wxml-->
 <view class="container">
-	<image class="product-img" src="/images/test.jpg"></image>
+	<image class="product-img" src="{{img}}"></image>
 	<view class="msg">
-		<text class="product-title">KILL LA KILL</text>
-		<text class="price">¥60</text>
-		<text class="price-bef">原价：¥86</text>
+		<text class="product-title">{{name}}</text>
+		<text class="price">¥{{price}}</text>
+		<text class="price-bef">原价：¥{{pre}}</text>
 	</view>
 	<view class="sale">
 		<text class="sale-text">优惠</text>

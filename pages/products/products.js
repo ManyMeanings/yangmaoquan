@@ -1,4 +1,6 @@
 // pages/products/products.js
+var startTime,
+  endTime
 Page({
 
   /**
@@ -12,11 +14,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarColor({
-      backgroundColor: '#ffffff',
-      frontColor: '#000000',
+    this.setData({
+        id: options.id,
+        name: options.name,
+        img: options.img,
+        price: options.price,
+        pre: options.pre,
+      }),
+      wx.setNavigationBarColor({
+        backgroundColor: '#ffffff',
+        frontColor: '#000000',
 
-    })
+      })
 
   },
 
@@ -31,20 +40,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log("计时开始")
+    startTime = new Date();
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
-
-  },
+  onHide: function () {},
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    endTime = new Date();
+    var stayTime = endTime - startTime;
+    console.log("页面停留时间：" + stayTime)
 
   },
 
