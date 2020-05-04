@@ -34,7 +34,7 @@ Page({
       }
     })
     wx.request({
-      url: 'http://tp.adplay.ink/QueryAllProdcut.php',	//此处不能用https，需勾选不校验合法域名，上线需使用https协议
+      url: 'http://tp.adplay.ink/QueryAllProduct.php',	//此处不能用https，需勾选不校验合法域名，上线需使用https协议
       data: {},									//传参
       header: {
         'content-type': 'application/json'
@@ -52,7 +52,7 @@ Page({
   },
   click: function (option) {
     wx.navigateTo({
-      url: '/pages/products/products?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name + '&img=' + option.currentTarget.dataset.img + '&pre=' + option.currentTarget.dataset.pre + '&price=' + option.currentTarget.dataset.price,
+      url: '/pages/products/products?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name + '&img=' + option.currentTarget.dataset.img + '&pre=' + option.currentTarget.dataset.pre + '&price=' + option.currentTarget.dataset.price + '&category=' + option.currentTarget.dataset.category,
     })
   },
   
