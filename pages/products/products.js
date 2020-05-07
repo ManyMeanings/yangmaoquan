@@ -7,19 +7,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+      
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
+    var that = this;
+    that.setData({
         id: options.id,
         name: options.name,
         img: options.img,
         price: options.price,
         pre: options.pre,
+        category:options.category,
       }),
       wx.setNavigationBarColor({
         backgroundColor: '#ffffff',
@@ -55,8 +57,23 @@ Page({
   onUnload: function () {
     endTime = new Date();
     var stayTime = endTime - startTime;
-    console.log("页面停留时间：" + stayTime)
-
+    console.log("页面停留时间：" + stayTime)    
+    wx.request({
+      url: 'http://tp.adplay.ink/RecordTime.php',
+      data:{
+        time:stayTime,   
+        id:wx.getStorageSync('openId'),
+        product_id:this.data.id,
+        category:this.data.category,
+      },
+      success: function (res) {
+          console.log(res.data);
+          console.log(wx.getStorageSync('openId'));
+      },
+      fail:function (res) {
+        console.log(res.data);
+      }
+    })
   },
 
   /**
