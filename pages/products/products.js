@@ -1,6 +1,7 @@
 // pages/products/products.js
 var startTime,
-  endTime
+  endTime,
+  visitTime
 Page({
 
   /**
@@ -44,6 +45,7 @@ Page({
   onShow: function () {
     console.log("计时开始")
     startTime = new Date();
+    visitTime = new Date();
   },
 
   /**
@@ -65,6 +67,7 @@ Page({
         id:wx.getStorageSync('openId'),
         product_id:this.data.id,
         category:this.data.category,
+        visitTime:visitTime,
       },
       success: function (res) {
           console.log(res.data);
