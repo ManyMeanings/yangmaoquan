@@ -24,9 +24,9 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
-	"appid": "wx788ae9a17ecb9c0d",
-	"projectname": "test",
+	"libVersion": "2.11.0",
+	"appid": "wx55c6fca54d4e9fef",
+	"projectname": "jutao",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

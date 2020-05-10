@@ -31,5 +31,9 @@
     "borderStyle": "white"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wx32540bd863b27570",
+    "wx91d27dbf599dff74"
+  ]
 }

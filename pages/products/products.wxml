@@ -1,13 +1,21 @@
 <!--pages/products/products.wxml-->
 <view class="container">
-	<image class="product-img" src="{{img}}"></image>
+		<view class="swiper">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+			<block wx:for="{{imgUrls}}" wx:key="index">
+				<swiper-item>
+					<image src="{{item}}" class="images" mode="aspectFill"/>
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
 	<view class="msg">
 		<text class="product-title">{{name}}</text>
 		<text class="price">¥{{price}}</text>
 		<text class="price-bef">原价：¥{{pre}}</text>
 	</view>
 	<view class="sale">
-		<text class="sale-text">优惠</text>
+		<text class="sale-text" >{{category}}</text>
 		<text class="to-sale">></text>
 	</view>
 	<view class="comments">
@@ -21,14 +29,12 @@
 </view>
 <view class="detail">
 <text class="title">商品详情</text>
-<image class="product-img" src="/images/test.jpg"></image>
-<image class="product-img" src="/images/test.jpg"></image>
-<image class="product-img" src="/images/test.jpg"></image>
+<text class="desc">{{desc}}</text>
 </view>
 <view class="bottom-tab">
 	<view class="save">
-		<image src="/images/save.png" mode="scaleToFill" class="save-img" mode="aspectFit"></image>
+		<image src="/images/save.png" class="save-img" mode="aspectFit"></image>
 		<text class="save-text">收藏</text>
 	</view>
-	<view class="buy-btn">领券购买</view>
+	<view class="buy-btn" bindtap="click">领券购买</view>
 </view>

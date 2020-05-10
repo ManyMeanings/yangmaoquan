@@ -1,13 +1,19 @@
 // pages/products/products.js
 var startTime,
   endTime,
-  visitTime
+  visitTime,
+  place
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    interval: 2000,
+    duration: 500,
       
   },
 
@@ -23,13 +29,47 @@ Page({
         price: options.price,
         pre: options.pre,
         category:options.category,
+        desc: options.desc
       }),
       wx.setNavigationBarColor({
         backgroundColor: '#ffffff',
         frontColor: '#000000',
 
       })
+      if(this.data.category == "J"){
+        place = "J";
+        this.setData({
+          category: "京东",
+        })
+      }else if(this.data.category == "P"){
+        place = "P"
+        this.setData({
+          category: "拼多多",
+        })
+      }
+      var imgUrls = this.data.img.split("|");
+      this.setData({
+        imgUrls: imgUrls
+      })
 
+  },
+  click: function (option) {
+    var appId;
+    if(place == "P"){
+      appId = "wx32540bd863b27570"
+    }else if (place == "J"){
+      appId = "wx91d27dbf599dff74"
+    }
+    wx.navigateToMiniProgram({
+      appId: appId,
+      path: '',
+      extraData: {
+      },
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
   },
 
   /**
