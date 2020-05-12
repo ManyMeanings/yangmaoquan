@@ -4,26 +4,26 @@
 		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 			<block wx:for="{{imgUrls}}" wx:key="index">
 				<swiper-item>
-					<image src="{{item}}" class="slide-image" mode="aspectFill" />
+					<image src="{{item}}" class="slide-image" mode="widthFix" />
 				</swiper-item>
 			</block>
 		</swiper>
 	</view>
 	<view class="buttons">
 		<view class="button">
-			<image src="/images/icon1.JPG" class="button-image" mode="aspectFill"></image>
+			<image src="/images/icon1.jpeg" class="button-image" mode="aspectFill"></image>
 			<text class="button-text">商品推荐</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon2.JPG" class="button-image" mode="aspectFill"></image>
+			<image src="/images/icon2.jpeg" class="button-image" mode="aspectFill"></image>
 			<text class="button-text">领券出行</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon3.JPG" class="button-image" mode="aspectFill"></image>
+			<image src="/images/icon3.jpeg" class="button-image" mode="aspectFill"></image>
 			<text class="button-text">我的券包</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon4.JPG" class="button-image" mode="aspectFill"></image>
+			<image src="/images/icon4.jpeg" class="button-image" mode="aspectFill"></image>
 			<text class="button-text">疯抢榜</text>
 		</view>
 	</view>
@@ -73,7 +73,7 @@
 	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;领券资讯</text>
 	<view class="news-items">
 		<view class="news-item" bindtap="click" wx:for="{{product_array}}" wx:key="id" data-name="{{item.goods_name}}" data-id="{{item.goods_id}}" data-img="{{item.goods_gallery_urls}}" data-pre="{{item.min_group_price}}" data-price="{{item.current_price}}" data-category="{{item.category}}" data-desc="{{item.goods_desc}}">
-			<image src="{{item.goods_thumbnail_url}}" mode="aspectFill" class="news-image"></image>
+			<image src="{{item.goods_thumbnail_url}}" class="news-image"></image>
 			<text class="news-title">{{item.goods_name}}</text>
 			<text class="money1">¥{{item.min_group_price}}</text>
 			<view class="extra-msg2">
