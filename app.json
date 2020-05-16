@@ -8,7 +8,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FF6B1A",
-    "navigationBarTitleText": "羊毛券",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

@@ -8,7 +8,7 @@
 </view>
 <template is="wxSearch" data="{{wxSearchData}}" />
 <view class="container" >
-	<view class="reasult">
+	<view class="reasult" bindtap="click">
 		<image class="img" src="/images/test.jpg"></image>
 		<view class="msg">
 			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>

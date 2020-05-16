@@ -14,7 +14,7 @@ Page({
   },
   onLoad: function () {
     wx.setNavigationBarTitle({
-      title: "今日好券"
+      title: "今日好物"
     })
     var that = this;
     wx.request({
