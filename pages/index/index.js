@@ -77,6 +77,11 @@ Page({
       url: '/pages/products/products?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name + '&img=' + option.currentTarget.dataset.img + '&pre=' + option.currentTarget.dataset.pre + '&price=' + option.currentTarget.dataset.price + '&category=' + option.currentTarget.dataset.category + '&desc=' + option.currentTarget.dataset.desc,
     })
   },
+  search: function (option) {
+    wx.navigateTo({
+      url: '/pages/search/search'
+    })
+  },
   
 
   

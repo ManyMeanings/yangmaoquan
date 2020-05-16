@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/users/users",
-    "pages/products/products"
+    "pages/products/products",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

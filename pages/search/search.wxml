@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<import src="/wxSearch/wxSearch.wxml" />
+<view class="wxSearch-section">
+	<view class="wxSearch-pancel">
+		<input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder="搜索" />
+		<button class="wxSearch-button" bindtap="wxSearchFn" size="mini" plain="true">搜索</button>
+	</view>
+</view>
+<template is="wxSearch" data="{{wxSearchData}}" />
+<view class="container" >
+	<view class="reasult">
+		<image class="img" src="/images/test.jpg"></image>
+		<view class="msg">
+			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>
+			<text class="price">¥1000.00</text>
+			<text class="source">商品来源</text>
+		</view>
+	</view>
+  <view class="reasult">
+		<image class="img" src="/images/test.jpg"></image>
+		<view class="msg">
+			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>
+			<text class="price">¥1000.00</text>
+			<text class="source">商品来源</text>
+		</view>
+	</view>
+</view>
