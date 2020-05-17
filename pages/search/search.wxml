@@ -8,20 +8,12 @@
 </view>
 <template is="wxSearch" data="{{wxSearchData}}" />
 <view class="container" >
-	<view class="reasult" bindtap="click">
-		<image class="img" src="/images/test.jpg"></image>
+	<view class="reasult" bindtap="click" wx:for="{{RearchResultList}}" wx:key="id">
+		<image class="img" src="{{item.shopImg}}"></image>
 		<view class="msg">
-			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>
-			<text class="price">¥1000.00</text>
-			<text class="source">商品来源</text>
-		</view>
-	</view>
-  <view class="reasult">
-		<image class="img" src="/images/test.jpg"></image>
-		<view class="msg">
-			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>
-			<text class="price">¥1000.00</text>
-			<text class="source">商品来源</text>
+			<text class="name">{{item.shopTitle}}</text>
+			<text class="price">{{item.shopPrice}}</text>
+			<text class="source">{{item.shopType}}</text>
 		</view>
 	</view>
 </view>

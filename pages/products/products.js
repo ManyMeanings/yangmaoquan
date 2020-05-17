@@ -22,6 +22,8 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    var url = options.url;
+    url = decodeURIComponent(url)
     that.setData({
         id: options.id,
         name: options.name,
@@ -29,7 +31,8 @@ Page({
         price: options.price,
         pre: options.pre,
         category:options.category,
-        desc: options.desc
+        desc: options.desc,
+        url: url
       }),
       wx.setNavigationBarColor({
         backgroundColor: '#ffffff',
@@ -62,7 +65,7 @@ Page({
     }
     wx.navigateToMiniProgram({
       appId: appId,
-      path: '',
+      path: this.data.url,
       extraData: {
       },
       envVersion: 'release',

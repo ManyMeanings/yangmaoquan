@@ -18,7 +18,7 @@ Page({
     })
     var that = this;
     wx.request({
-      url: 'https://tp.adplay.ink/QueryProductByClientId.php',//此处不能用https，需勾选不校验合法域名，上线需使用https协议
+      url: 'https://tp.adplay.ink/QueryProductByClientId.php',
       data: {
         'client_id':wx.getStorageSync('openId'),
       },									//传参
@@ -29,7 +29,7 @@ Page({
         if(res.data=='0')      
       { 
       wx.request({
-      url: 'https://tp.adplay.ink/QueryProductByRandom.php',//此处不能用https，需勾选不校验合法域名，上线需使用https协议
+      url: 'https://tp.adplay.ink/QueryProductByRandom.php',
       data: {},									//传参
       header: {
         'content-type': 'application/json'
@@ -73,8 +73,10 @@ Page({
     
  },
   click: function (option) {
+    var url = option.currentTarget.dataset.url;
+    var encodeURIComponent_url = encodeURIComponent (url);
     wx.navigateTo({
-      url: '/pages/products/products?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name + '&img=' + option.currentTarget.dataset.img + '&pre=' + option.currentTarget.dataset.pre + '&price=' + option.currentTarget.dataset.price + '&category=' + option.currentTarget.dataset.category + '&desc=' + option.currentTarget.dataset.desc,
+      url: '/pages/products/products?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name + '&img=' + option.currentTarget.dataset.img + '&pre=' + option.currentTarget.dataset.pre + '&price=' + option.currentTarget.dataset.price + '&category=' + option.currentTarget.dataset.category + '&desc=' + option.currentTarget.dataset.desc + '&url=' + encodeURIComponent_url,
     })
   },
   search: function (option) {

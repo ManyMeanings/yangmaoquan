@@ -7,7 +7,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    display: "none"
+    display: "none",
+    Key:"",
+    RearchResultList:""
   },
 
   /**
@@ -20,11 +22,27 @@ Page({
     WxSearch.initMindKeys(['检索', '内容', '的提示']);
   },
   wxSearchFn: function (e) {
-    
-  },
-  wxSearchFn: function (e) {
     var that = this
     WxSearch.wxSearchAddHisKey(that);
+    that.setData({
+      Key:e.detail.value
+    })
+    wx.request({
+      url: 'https://tp.adplay.ink/ComparePrice.php',
+      data:{
+        keyword:this.data.Key
+      },
+      success:function(res)
+      {
+        console.log(res.data)
+        that.setData({
+          RearchResultList:res.data
+        })
+      },
+      fail:function(res){
+        console.log(res.data)
+      }
+    })
   },
   wxSearchInput: function (e) {
     var that = this
