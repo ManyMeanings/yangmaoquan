@@ -1,10 +1,10 @@
 <!--pages/data/data.wxml-->
 <view class="reasult">
-		<image class="img" src="/images/test.jpg"></image>
+		<image class="img" src="{{img}}"></image>
 		<view class="msg">
-			<text class="name">商品名商品名商品名商品名商品名商品名商品名商品名</text>
-			<text class="price">¥1000.00</text>
-			<text class="source">商品来源</text>
+			<text class="name">{{name}}</text>
+			<text class="price">{{price}}</text>
+			<text class="source">{{source}}</text>
 		</view>
 	</view>
 <view class="history-price">

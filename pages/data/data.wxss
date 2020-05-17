@@ -11,9 +11,8 @@ ec-canvas {
 .reasult {
   width: 90%;
   height: 200rpx;
-  margin: 40rpx auto; 
+  margin-top: 20rpx;
   display: flex;
-
 }
 .img {
   width: 200rpx;
@@ -29,9 +28,12 @@ ec-canvas {
 }
 .price {
   color: red;
-  font-size: 40rpx;
+  font-size: 30rpx;
 }
 .source {
   color: gray;
+  font-size: 20rpx;
+}
+.name {
   font-size: 25rpx;
 }

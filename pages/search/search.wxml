@@ -8,7 +8,7 @@
 </view>
 <template is="wxSearch" data="{{wxSearchData}}" />
 <view class="container" >
-	<view class="reasult" bindtap="click" wx:for="{{RearchResultList}}" wx:key="id">
+	<view class="reasult" bindtap="click" wx:for="{{RearchResultList}}" wx:key="id" data-name="{{item.shopTitle}}" data-img="{{item.shopImg}}" data-price="{{item.shopPrice}}" data-source="{{item.shopType}}" data-history="{{item.timeAndprice}}">
 		<image class="img" src="{{item.shopImg}}"></image>
 		<view class="msg">
 			<text class="name">{{item.shopTitle}}</text>

@@ -20,9 +20,12 @@
 }
 .price {
   color: red;
-  font-size: 40rpx;
+  font-size: 30rpx;
 }
 .source {
   color: gray;
+  font-size: 20rpx;
+}
+.name {
   font-size: 25rpx;
 }

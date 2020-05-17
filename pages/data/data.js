@@ -1,5 +1,9 @@
 // pages/data/data.js
 import * as echarts from '../../ec-canvas/echarts';
+
+var historyTime;
+var historyPrice;
+
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
     width: width,
@@ -17,16 +21,16 @@ function initChart(canvas, width, height, dpr) {
     color: ["#37A2DA"],
     //定义你图标的线的类型种类
     legend: {
-    data: ['价格'],
-    top: 35,
-    left: 'right',
-    backgroundColor: 'white',
-    z: 100
+      data: ['价格'],
+      top: 35,
+      left: 'right',
+      backgroundColor: 'white',
+      z: 100
     },
     grid: {
-    containLabel: true
-  },
-  //当你选中数据时的提示框
+      containLabel: true
+    },
+    //当你选中数据时的提示框
     tooltip: {
       show: true,
       trigger: 'axis'
@@ -35,7 +39,7 @@ function initChart(canvas, width, height, dpr) {
     xAxis: {
       type: 'category',
       boundaryGap: false,
-      data: ['2-3', '2-23', '3-14', '4-3', '4-23', '5-13'],//x轴数据
+      data: historyTime, //x轴数据
       // x轴的字体样式
       axisLabel: {
         show: true,
@@ -57,7 +61,7 @@ function initChart(canvas, width, height, dpr) {
       axisLine: {
         lineStyle: {
           color: '#000',
-          width: 1,   //这里是坐标轴的宽度,可以去掉
+          width: 1, //这里是坐标轴的宽度,可以去掉
         }
       }
       // show: false //是否显示坐标
@@ -77,7 +81,7 @@ function initChart(canvas, width, height, dpr) {
       name: '价格',
       type: 'line',
       smooth: true,
-      data: [148, 148, 166, 99, 148, 148]
+      data: historyPrice
     }]
   };
   chart.setOption(option);
@@ -99,6 +103,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    var history = options.history;
+    console.log(history);
+    var flag = false;
+    for (var i = 0; i < history.length; i++) {
+      if (history[i] == "]") {
+        historyTime = history.slice(2, i);
+        flag = true;
+        for (var j = i + 2; j < history.length; j++) {
+          if (history[j] == "]") {
+            historyPrice = history.slice(i + 3, j);
+            break;
+          }
+        }
+      }
+      if (flag) break;
+    }
+    historyTime = historyTime.split(',');
+    historyPrice = historyPrice.split(',');
+    console.log("historyTime: " + historyTime);
+    console.log("historyPrice: " + historyPrice);
+    that.setData({
+      name: options.name,
+      img: options.img,
+      price: options.price,
+      source: options.source,
+      historyTime: historyTime,
+      historyPrice: historyPrice
+    })
 
   },
 
