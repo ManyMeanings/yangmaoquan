@@ -3,6 +3,7 @@ import * as echarts from '../../ec-canvas/echarts';
 
 var historyTime;
 var historyPrice;
+var history;
 
 function initChart(canvas, width, height, dpr) {
   const chart = echarts.init(canvas, null, {
@@ -104,35 +105,46 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    var history = options.history;
-    console.log(history);
-    var flag = false;
-    for (var i = 0; i < history.length; i++) {
-      if (history[i] == "]") {
-        historyTime = history.slice(2, i);
-        flag = true;
-        for (var j = i + 2; j < history.length; j++) {
-          if (history[j] == "]") {
-            historyPrice = history.slice(i + 3, j);
-            break;
+    wx.request({
+      url: 'https://tp.adplay.ink/ComparePrice.php',
+      data: {
+        url: options.url
+      },
+      success: function (res) {
+        console.log("res.data: " + res.data);
+        history = res.data;
+        var flag = false;
+        for (var i = 0; i < history.length; i++) {
+          if (history[i] == "]") {
+            historyTime = history.slice(2, i);
+            flag = true;
+            for (var j = i + 2; j < history.length; j++) {
+              if (history[j] == "]") {
+                historyPrice = history.slice(i + 3, j);
+                break;
+              }
+            }
           }
+          if (flag) break;
         }
-      }
-      if (flag) break;
-    }
-    historyTime = historyTime.split(',');
-    historyPrice = historyPrice.split(',');
-    console.log("historyTime: " + historyTime);
-    console.log("historyPrice: " + historyPrice);
-    that.setData({
-      name: options.name,
-      img: options.img,
-      price: options.price,
-      source: options.source,
-      historyTime: historyTime,
-      historyPrice: historyPrice
-    })
+        historyTime = historyTime.split(',');
+        historyPrice = historyPrice.split(',');
+        console.log("historyTime: " + historyTime);
+        console.log("historyPrice: " + historyPrice);
 
+        that.setData({
+          name: options.name,
+          img: options.img,
+          price: options.price,
+          source: options.source,
+          historyTime: historyTime,
+          historyPrice: historyPrice
+        })
+      },
+      fail: function (res) {
+        console.log("error: " + res.data)
+      }
+    }, )
   },
 
   /**

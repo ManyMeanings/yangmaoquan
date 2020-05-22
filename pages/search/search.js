@@ -79,7 +79,7 @@ Page({
   },
   click: function(option){
     wx.navigateTo({
-      url: '/pages/data/data?name='+ option.currentTarget.dataset.name + '&price=' + option.currentTarget.dataset.price + '&img=' + option.currentTarget.dataset.img + '&source=' + option.currentTarget.dataset.source + '&history=' + option.currentTarget.dataset.history, 
+      url: '/pages/data/data?name='+ option.currentTarget.dataset.name + '&price=' + option.currentTarget.dataset.price + '&img=' + option.currentTarget.dataset.img + '&source=' + option.currentTarget.dataset.source + '&url=' + option.currentTarget.dataset.url, 
     })
   },
 
