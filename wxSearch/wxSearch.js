@@ -20,7 +20,7 @@
 var __keysColor = [];
 
 var __mindKeys = [];
-
+var app = getApp();
 function initColors(colors){
     __keysColor = colors;
 }
@@ -129,9 +129,12 @@ function wxSearchKeyTap(e, that, callBack) {
     //回调
     var temData = that.data.wxSearchData;
     temData.value = e.target.dataset.key;
+    console.log(temData)
     that.setData({
         wxSearchData: temData
     });
+    app.globalData.key = temData.value
+    console.log(app.globalData.key)
     if (typeof (callBack) == "function") {
         callBack();
     }

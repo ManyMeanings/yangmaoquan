@@ -1,19 +1,12 @@
 // pages/data/data.js
 import * as echarts from '../../ec-canvas/echarts';
-
 var historyTime;
 var historyPrice;
 var history;
+const app = getApp();
 
-function initChart(canvas, width, height, dpr) {
-  const chart = echarts.init(canvas, null, {
-    width: width,
-    height: height,
-    devicePixelRatio: dpr // 像素
-  });
-  canvas.setChart(chart);
-
-  var option = {
+function setOption(chart) {
+  const option = {
     //定义图标的标题和颜色
     title: {
       text: '价格走势',
@@ -33,8 +26,10 @@ function initChart(canvas, width, height, dpr) {
     },
     //当你选中数据时的提示框
     tooltip: {
-      show: true,
-      trigger: 'axis'
+      trigger: 'none',
+        axisPointer: {
+            type: 'cross'
+        }
     },
     //	x轴
     xAxis: {
@@ -76,7 +71,7 @@ function initChart(canvas, width, height, dpr) {
           type: 'dashed'
         }
       },
-      // show: false
+      min: 'dataMin'
     },
     series: [{
       name: '价格',
@@ -86,18 +81,19 @@ function initChart(canvas, width, height, dpr) {
     }]
   };
   chart.setOption(option);
-  return chart;
 }
-Page({
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     ec: {
-      onInit: initChart
-    }
-
+      // 将 lazyLoad 设为 true 后，需要手动初始化图表
+      lazyLoad: true
+    },
+    isLoaded: false,
+    isDisposed: false
   },
 
   /**
@@ -127,8 +123,8 @@ Page({
           }
           if (flag) break;
         }
-        historyTime = historyTime.split(',');
-        historyPrice = historyPrice.split(',');
+        historyTime = historyTime.split(',').reverse();
+        historyPrice = historyPrice.split(',').reverse();
         console.log("historyTime: " + historyTime);
         console.log("historyPrice: " + historyPrice);
 
@@ -140,6 +136,30 @@ Page({
           historyTime: historyTime,
           historyPrice: historyPrice
         })
+
+        that.ecComponent = that.selectComponent('#mychart-dom-bar');
+
+        that.ecComponent.init((canvas, width, height, dpr) => {
+          // 获取组件的 canvas、width、height 后的回调函数
+          // 在这里初始化图表
+          const chart = echarts.init(canvas, null, {
+            width: width,
+            height: height,
+            devicePixelRatio: dpr // new
+          });
+          setOption(chart);
+
+          // 将图表实例绑定到 this 上，可以在其他成员函数（如 dispose）中访问
+          that.chart = chart;
+
+          that.setData({
+            isLoaded: true,
+            isDisposed: false
+          });
+
+          // 注意这里一定要返回 chart 实例，否则会影响事件处理等
+          return chart;
+        });
       },
       fail: function (res) {
         console.log("error: " + res.data)
@@ -147,12 +167,19 @@ Page({
     }, )
   },
 
+  dispose: function () {
+    if (this.chart) {
+      this.chart.dispose();
+    }
+    this.setData({
+      isDisposed: true
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-
-  },
+  onReady: function () {},
 
   /**
    * 生命周期函数--监听页面显示

@@ -8,12 +8,11 @@ Page({
    */
   data: {
     display: "none",
-    Key:"",
     RearchResultList:"",
     url:"",
-    timeAndPrice:""
+    timeAndPrice:"",
+    Key:""
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -22,13 +21,13 @@ Page({
     //初始化的时候渲染wxSearchdata
     WxSearch.init(that, 43, ['自定义', '的热门', '搜索', '列表']);
     WxSearch.initMindKeys(['检索', '内容', '的提示']);
+    console.log(app.globalData.key)
   },
   wxSearchInput: function (e) {
     var that = this
     WxSearch.wxSearchInput(e, that);
-    that.setData({
-      Key:e.detail.value
-    })
+    app.globalData.key = e.detail.value
+
     console.log(this.data.Key)
   },
   wxSearchFn: function (e) {
@@ -38,7 +37,7 @@ Page({
     wx.request({
       url: 'https://tp.adplay.ink/GETURL.php',
       data:{
-        keyword:this.data.Key
+        keyword:app.globalData.key
       },
       success:function(res)
       {
