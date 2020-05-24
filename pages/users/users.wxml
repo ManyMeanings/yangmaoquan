@@ -6,6 +6,15 @@
 			<view class="img-border">
 				<image src="/images/test.jpg" class="head"></image>
 			</view>
+			<view class="box">
+				<view class="first-line">
+					<text class="name">王语嫣</text>
+					<view class="sign">新手圈主</view>
+				</view>
+				<text decode="true" class="change">&nbsp;&nbsp;圈子操作&nbsp;&nbsp;</text>
+				<view class="clean"></view>
+				<text class="introduce">圈子介绍：为了给爱好购物的朋友们一个交流讨论的平台。</text>
+			</view>
 		</view>
 		<view class="middle">
 			<view class="text-border">
@@ -14,9 +23,14 @@
 			</view>
 		</view>
 		<view class="bottom">
-    <view class="tag">● 标签</view>
-    <view class="tag">● 标签</view>
-    <view class="tag">● 标签</view>
-    </view>
+			<text decode="true" class="tag">&nbsp;&nbsp;● 标签&nbsp;&nbsp;</text>
+			<text decode="true" class="tag">&nbsp;&nbsp;● 标签&nbsp;&nbsp;</text>
+			<text decode="true" class="tag">&nbsp;&nbsp;● 标签&nbsp;&nbsp;</text>
+		</view>
+	</view>
+
+	<view class="search" bindtap="search">
+		<image class="search-img" src="/images/search.png"></image>
+		<text class="search-text">搜索</text>
 	</view>
 </view>

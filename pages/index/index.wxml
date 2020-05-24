@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <view class="container">
-<view class="search" bindtap="search">
-<image class="search-img" src="/images/search.png"></image>
-<text class="search-text">粘贴商品关键词全网比价</text>
-</view>
+	<view class="search" bindtap="search">
+		<image class="search-img" src="/images/search.png"></image>
+		<text class="search-text">粘贴商品关键词全网比价</text>
+	</view>
 	<view class="swiper">
 		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 			<block wx:for="{{imgUrls}}" wx:key="index">
@@ -76,7 +76,7 @@
 	</scroll-view>
 	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;领券资讯</text>
 	<view class="news-items">
-		<view class="news-item" bindtap="click" wx:for="{{product_array}}" wx:key="id" data-name="{{item.goods_name}}" data-id="{{item.goods_id}}" data-img="{{item.goods_gallery_urls}}" data-pre="{{item.min_group_price}}"data-price="{{item.current_price}}" data-category="{{item.category}}" data-desc="{{item.goods_desc}}" data-url="{{item.goods_url}}">
+		<view class="news-item" bindtap="click" wx:for="{{product_array}}" wx:key="id" data-name="{{item.goods_name}}" data-id="{{item.goods_id}}" data-img="{{item.goods_gallery_urls}}" data-pre="{{item.min_group_price}}" data-price="{{item.current_price}}" data-category="{{item.category}}" data-desc="{{item.goods_desc}}" data-url="{{item.goods_url}}">
 			<image src="{{item.goods_thumbnail_url}}" class="news-image"></image>
 			<text class="news-title">{{item.goods_name}}</text>
 			<text class="money1">¥{{item.min_group_price}}</text>

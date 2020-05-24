@@ -20,13 +20,16 @@
   padding: 10rpx 40rpx;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
 .top {
   flex: 4;
   padding-top: 30rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  display: flex;
 }
 
 .middle {
@@ -46,7 +49,9 @@
   height: 130rpx;
   width: 130rpx;
   border-radius: 50%;
+  margin-left: 15rpx;
 }
+
 .head {
   height: 100%;
   width: 100%;
@@ -71,10 +76,65 @@
 .msg {
   font-size: 18rpx;
 }
+
 .tag {
   background-color: #bfbfbf;
   border-radius: 20rpx;
   float: left;
   margin-right: 40rpx;
   font-size: 18rpx;
+}
+
+.box {
+  font-size: 20rpx;
+  margin-left: 15rpx;
+  width: 65%;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 35rpx;
+
+}
+
+.sign {
+  color: green;
+}
+
+.change {
+  float: right;
+  border-radius: 20rpx;
+  background-color: #bfbfbf;
+}
+
+.clean {
+  clear: both;
+}
+
+.introduce {
+  margin-top: 5rpx;
+  font-size: 25rpx;
+}
+
+.search {
+  padding: 5rpx;
+  width: 90%;
+  height: 40rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+.search-text {
+  color: #bfbfbf;
+  font-size: 25rpx;
+  margin-left: 10rpx;
+}
+.search-img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
 }
