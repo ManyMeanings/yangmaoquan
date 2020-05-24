@@ -1,2 +1,22 @@
 <!--pages/users/users.wxml-->
-<text>pages/users/users.wxml</text>
+<view class="container">
+	<view class="background-color"></view>
+	<view class="user-card">
+		<view class="top">
+			<view class="img-border">
+				<image src="/images/test.jpg" class="head"></image>
+			</view>
+		</view>
+		<view class="middle">
+			<view class="text-border">
+				<text class="hello">早上好，我的ID~：</text>
+				<text class="msg">公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告</text>
+			</view>
+		</view>
+		<view class="bottom">
+    <view class="tag">● 标签</view>
+    <view class="tag">● 标签</view>
+    <view class="tag">● 标签</view>
+    </view>
+	</view>
+</view>

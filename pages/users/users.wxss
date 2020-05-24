@@ -1,1 +1,80 @@
 /* pages/users/users.wxss */
+.background-color {
+  background-color: #FF6B1A;
+  width: 100%;
+  height: 250rpx;
+  position: relative;
+  z-index: 0;
+}
+
+.user-card {
+  width: 80%;
+  height: 330rpx;
+  position: relative;
+  top: -250rpx;
+  z-index: 1;
+  background-color: white;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 25rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx #bfbfbf;
+  padding: 10rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+
+.top {
+  flex: 4;
+  padding-top: 30rpx;
+}
+
+.middle {
+  flex: 2;
+  margin-top: 20rpx;
+}
+
+.bottom {
+  flex: 1;
+  height: 20rpx;
+  padding-top: 20rpx;
+}
+
+.img-border {
+  padding: 7rpx;
+  border: 1rpx solid #FF6B1A;
+  height: 130rpx;
+  width: 130rpx;
+  border-radius: 50%;
+}
+.head {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text-border {
+  border: 1rpx solid #FF6B1A;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  width: 100%;
+  height: 70rpx;
+  line-height: 20rpx;
+}
+
+.hello {
+  font-size: 18rpx;
+  font-weight: bold;
+  display: block;
+}
+
+.msg {
+  font-size: 18rpx;
+}
+.tag {
+  background-color: #bfbfbf;
+  border-radius: 20rpx;
+  float: left;
+  margin-right: 40rpx;
+  font-size: 18rpx;
+}
