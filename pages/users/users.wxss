@@ -1,18 +1,23 @@
 /* pages/users/users.wxss */
+.container-self {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
 .background-color {
   background-color: #FF6B1A;
   width: 100%;
   height: 250rpx;
-  position: relative;
-  z-index: 0;
 }
 
 .user-card {
   width: 80%;
   height: 330rpx;
-  position: relative;
-  top: -250rpx;
-  z-index: 1;
+  position: absolute;
+  top: 10rpx;
+  left: 4%;
+  z-index: 2;
   background-color: white;
   border: 1rpx solid #bfbfbf;
   border-radius: 25rpx;
@@ -22,6 +27,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .top {
@@ -126,15 +132,139 @@
   height: 40rpx;
   border: 1rpx solid #bfbfbf;
   border-radius: 20rpx;
-  margin-top: 20rpx;
+  margin-top: 140rpx;
+  margin-left: 4%;
 }
+
 .search-text {
   color: #bfbfbf;
   font-size: 25rpx;
   margin-left: 10rpx;
 }
+
 .search-img {
   width: 30rpx;
   height: 30rpx;
   margin-left: 10rpx;
 }
+
+.product {
+  width: 90%;
+  height: 250rpx;
+  display: flex;
+  flex-direction: column;
+  margin: 25rpx auto;
+}
+
+.product-box {
+  display: flex;
+  position: relative;
+}
+
+.extra-msg {
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.product-img {
+  height: 220rpx;
+  width: 220rpx;
+  margin-right: 10rpx;
+}
+
+.product-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.product-name {
+  font-size: 25rpx;
+}
+
+.product-price {
+  color: red;
+  font-size: 27rpx;
+}
+
+.product-tag {
+  font-size: 17rpx;
+}
+
+.tags {
+  display: flex;
+  align-items: flex-start;
+}
+
+.first-tag {
+  border: 1rpx solid red;
+  border-radius: 20rpx;
+  color: red;
+  font-size: 17rpx;
+  margin-right: 10rpx;
+}
+
+.img-box {
+  position: relative;
+}
+
+.event-tag {
+  position: absolute;
+  z-index: 2;
+  bottom: 10rpx;
+  left: 10rpx;
+  border: 1rpx solid red;
+  border-radius: 20rpx;
+  color: red;
+  font-size: 17rpx;
+}
+
+.friends {
+  position: absolute;
+  z-index: 2;
+  top: 70rpx;
+  right: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100rpx;
+  width: 100rpx;
+}
+.num {
+  color: red;
+  font-size: 20rpx;
+}
+
+.friends-imgs {
+  position: relative;
+}
+
+.friends-img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.friends-img-second {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 35rpx;
+}
+
+.change-tag {
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.new {
+  color: #bfbfbf;
+  margin-left: 15rpx;
+}
+
