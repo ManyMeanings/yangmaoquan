@@ -4,11 +4,11 @@
 	<view class="user-card">
 		<view class="top">
 			<view class="img-border">
-				<image src="/images/test.jpg" class="head"></image>
+				 <open-data class="head" type="userAvatarUrl"></open-data>
 			</view>
 			<view class="box">
 				<view class="first-line">
-					<text class="name">王语嫣</text>
+					<open-data type="userNickName" lang="zh_CN" class="name"></open-data>
 					<view class="sign">新手圈主</view>
 				</view>
 				<text decode="true" class="change">&nbsp;&nbsp;圈子操作&nbsp;&nbsp;</text>

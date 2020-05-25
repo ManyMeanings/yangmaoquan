@@ -56,12 +56,12 @@
   width: 130rpx;
   border-radius: 50%;
   margin-left: 15rpx;
+  overflow:hidden;
 }
 
 .head {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
 }
 
 .text-border {
