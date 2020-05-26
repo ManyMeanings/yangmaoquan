@@ -104,7 +104,8 @@ Page({
     wx.request({
       url: 'https://tp.adplay.ink/ComparePrice.php',
       data: {
-        url: options.url
+        url: options.url,
+        price:options.price
       },
       success: function (res) {
         console.log("res.data: " + res.data);
