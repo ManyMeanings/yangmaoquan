@@ -42,77 +42,65 @@
   
 }
 .button-image {
-  width: 100rpx;
-  height: 90rpx;
+  width: 80rpx;
+  height: 80rpx;
 }
 .button-text {
   font-size: 24rpx;
   margin-top: 10rpx;
 }
 .title {
+  height: 50rpx;
   font-size: 30rpx;
   margin-right: auto;
   padding-left: 4%;
-  margin-bottom: 10rpx;
+  width: 100%;
+  margin-bottom: 15rpx;
 }
-.title::first-letter {
-  color: blue;
+.icon {
+  float: left;
+  margin-right: 10rpx;
+  height: 30rpx;
+  width: 25rpx;
+  padding-top: 3rpx;
 }
-.love-items {
-  height: 250rpx;
+.recommend-text {
+  float: left;
+}
+.go {
+  float: right;
+  padding-right: 60rpx;
+  height: 20rpx;
+  width: 18rpx;
+}
+.recommend {
   width: 92%;
-  margin-bottom: 20rpx;
+  height: 320rpx;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  white-space: nowrap;
-  
 }
-.love-item {
-  width: 25%;
-  background-color: #F2F2F2;
+.circle {
+  width: 30%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
-  display: inline-block;
-  margin-top: 20rpx;
+  font-size: 23rpx;
 }
-.love-image {
-  width: 150rpx;
-  height: 150rpx;
-  display: block;
+.circle-img {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 5%;
 }
-.love-title {
-  font-size: 27rpx;
-  color: #747192;
-  display: block;
-}
-.love-money {
-  font-size: 20rpx;
-  color: #D8CECC;
-  padding-right: 20rpx;
-}
-.extra-msg {
+.friends {
   color: red;
-  font-size: 20rpx;
-  
 }
-.love-msg {
-  display: flex;
-  justify-content: space-between;
-  display: block;
-  position: relative;
-  top: -15rpx;
-}
-
 .news-items {
   width: 92%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 20rpx;
 }
 .news-item {
   width: 48%;
@@ -123,15 +111,19 @@
   flex-direction: column;
 }
 .news-image {
-  width: 100%;
+  width: 320rpx;
+  height: 300rpx;
+  border-radius: 5%;
 }
 .news-title {
-  font-size: 30rpx;
+  font-size: 25rpx;
   color: #898694;
 }
 .money1 {
   font-size: 20rpx;
   color: #A79A99;
+  text-decoration:line-through;
+  margin-left: 10rpx;
 }
 .money2 {
   font-size: 30rpx;

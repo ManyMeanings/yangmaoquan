@@ -2,7 +2,7 @@
 <view class="container">
 	<view class="search" bindtap="search">
 		<image class="search-img" src="/images/search.png"></image>
-		<text class="search-text">粘贴商品关键词全网比价</text>
+		<text class="search-text">请输入关键词进行搜索</text>
 	</view>
 	<view class="swiper">
 		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -15,73 +15,57 @@
 	</view>
 	<view class="buttons">
 		<view class="button">
-			<image src="/images/icon1.jpeg" class="button-image" mode="aspectFill"></image>
-			<text class="button-text">商品推荐</text>
+			<image src="/images/icon2.png" class="button-image"></image>
+			<text class="button-text">外卖生活</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon2.jpeg" class="button-image" mode="aspectFill"></image>
-			<text class="button-text">领券出行</text>
+			<image src="/images/icon2.png" class="button-image"></image>
+			<text class="button-text">酒店出行</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon3.jpeg" class="button-image" mode="aspectFill"></image>
-			<text class="button-text">我的券包</text>
+			<image src="/images/icon3.png" class="button-image"></image>
+			<text class="button-text">查历史价</text>
 		</view>
 		<view class="button">
-			<image src="/images/icon4.jpeg" class="button-image" mode="aspectFill"></image>
+			<image src="/images/icon4.png" class="button-image"></image>
 			<text class="button-text">疯抢榜</text>
 		</view>
 	</view>
-	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;猜你喜欢</text>
-	<scroll-view scroll-x="true" class="love-items">
-		<view class="love-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
-			<text class="love-title">kill la kill</text>
-			<view class="love-msg">
-				<text class="love-money">¥100</text>
-				<text class="extra-msg">全网最低</text>
-			</view>
+	<view class="title">
+		<image class="icon" src="/images/recommend.png"></image>
+		<text class="title-text">推荐圈子</text>
+		<image class="go" src="/images/go.png"></image>
+	</view>
+	<view class="recommend">
+		<view class="circle">
+			<image class="circle-img" src="/images/test.jpg"></image>
+			<text class="cicle-name">圈子名称</text>
+			<text class="friends">16位好友在这里</text>
 		</view>
-		<view class="love-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
-			<text class="love-title">kill la kill</text>
-			<view class="love-msg">
-				<text class="love-money">¥100</text>
-				<text class="extra-msg">全网最低</text>
-			</view>
+		<view class="circle">
+			<image class="circle-img" src="/images/test.jpg"></image>
+			<text class="cicle-name">圈子名称</text>
+			<text class="friends">16位好友在这里</text>
 		</view>
-		<view class="love-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
-			<text class="love-title">kill la kill</text>
-			<view class="love-msg">
-				<text class="love-money">¥100</text>
-				<text class="extra-msg">全网最低</text>
-			</view>
+		<view class="circle">
+			<image class="circle-img" src="/images/test.jpg"></image>
+			<text class="cicle-name">圈子名称</text>
+			<text class="friends">16位好友在这里</text>
 		</view>
-		<view class="love-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
-			<text class="love-title">kill la kill</text>
-			<view class="love-msg">
-				<text class="love-money">¥100</text>
-				<text class="extra-msg">全网最低</text>
-			</view>
-		</view>
-		<view class="love-item">
-			<image src="/images/test.jpg" mode="scaleToFill" class="love-image"></image>
-			<text class="love-title">kill la kill</text>
-			<view class="love-msg">
-				<text class="love-money">¥100</text>
-				<text class="extra-msg">全网最低</text>
-			</view>
-		</view>
-	</scroll-view>
-	<text decode="{{true}}" class="title">|&nbsp;&nbsp;&nbsp;领券资讯</text>
+	</view>
+	<view class="title">
+		<image class="icon" src="/images/hot.png"></image>
+		<text class="title-text">热门推荐</text>
+	</view>
 	<view class="news-items">
 		<view class="news-item" bindtap="click" wx:for="{{product_array}}" wx:key="id" data-name="{{item.goods_name}}" data-id="{{item.goods_id}}" data-img="{{item.goods_gallery_urls}}" data-pre="{{item.min_group_price}}" data-price="{{item.current_price}}" data-category="{{item.category}}" data-desc="{{item.goods_desc}}" data-url="{{item.goods_url}}">
 			<image src="{{item.goods_thumbnail_url}}" class="news-image"></image>
 			<text class="news-title">{{item.goods_name}}</text>
-			<text class="money1">¥{{item.min_group_price}}</text>
 			<view class="extra-msg2">
-				<text class="money2">¥{{item.current_price}}</text>
+				<view>
+					<text class="money2">¥{{item.current_price}}</text>
+					<text class="money1">¥{{item.min_group_price}}</text>
+				</view>
 				<text class="buy-number">99位好友已购买</text>
 			</view>
 		</view>
