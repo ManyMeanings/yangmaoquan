@@ -81,6 +81,11 @@ Page({
       url: '/pages/search/search'
     })
   },
+  rank:function(option){
+    wx.navigateTo({
+      url: '/pages/rank/rank',
+    })
+  }
   
 
   

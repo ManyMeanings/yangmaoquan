@@ -26,7 +26,7 @@
 			<image src="/images/icon3.png" class="button-image"></image>
 			<text class="button-text">查历史价</text>
 		</view>
-		<view class="button">
+		<view class="button" bindtap="rank">
 			<image src="/images/icon4.png" class="button-image"></image>
 			<text class="button-text">疯抢榜</text>
 		</view>

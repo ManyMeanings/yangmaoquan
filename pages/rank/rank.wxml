@@ -1,0 +1,51 @@
+<!--pages/rank/rank.wxml-->
+<view class="container">
+	<view class="product">
+  <image class="rank" src="/images/rank1.png"></image>
+		<image class="product-img" src="/images/test.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
+			<view>
+				<text class="money2">¥199.99</text>
+				<text class="money1">¥299</text>
+			</view>
+      <view class="extra-msg">
+      <text class="friends">3个好友曾查询</text>
+      <image class="get" src="/images/get.png"></image>
+      </view>
+		</view>
+	</view>
+
+  <view class="product">
+  <image class="rank" src="/images/rank2.png"></image>
+		<image class="product-img" src="/images/test.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
+			<view>
+				<text class="money2">¥199.99</text>
+				<text class="money1">¥299</text>
+			</view>
+      <view class="extra-msg">
+      <text class="friends">3个好友曾查询</text>
+      <image class="get" src="/images/get.png"></image>
+      </view>
+		</view>
+	</view>
+
+  <view class="product">
+  <image class="rank" src="/images/rank3.png"></image>
+		<image class="product-img" src="/images/test.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
+			<view>
+				<text class="money2">¥199.99</text>
+				<text class="money1">¥299</text>
+			</view>
+      <view class="extra-msg">
+      <text class="friends">3个好友曾查询</text>
+      <image class="get" src="/images/get.png"></image>
+      </view>
+		</view>
+	</view>
+
+</view>
