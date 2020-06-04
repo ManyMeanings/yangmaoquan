@@ -21,6 +21,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: "商品 评论 详情"
+    })
     var that = this;
     var url = options.url;
     url = decodeURIComponent(url)

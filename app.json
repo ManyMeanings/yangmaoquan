@@ -13,7 +13,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f7660f",
-    "navigationBarTitleText": "",
+    "navigationBarTitleText": "今 日 好 券",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

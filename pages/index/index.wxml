@@ -15,7 +15,7 @@
 	</view>
 	<view class="buttons">
 		<view class="button">
-			<image src="/images/icon1.jpg" class="button-image"></image>
+			<image src="/images/icon2.png" class="button-image"></image>
 			<text class="button-text">外卖生活</text>
 		</view>
 		<view class="button">
@@ -70,6 +70,4 @@
 			</view>
 		</view>
 	</view>
-
-
 </view>
