@@ -22,7 +22,7 @@
 			<image src="/images/icon2.png" class="button-image"></image>
 			<text class="button-text">酒店出行</text>
 		</view>
-		<view class="button">
+		<view class="button" bindtap="history">
 			<image src="/images/icon3.png" class="button-image"></image>
 			<text class="button-text">查历史价</text>
 		</view>
@@ -70,6 +70,4 @@
 			</view>
 		</view>
 	</view>
-
-
 </view>

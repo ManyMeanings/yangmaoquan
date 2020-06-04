@@ -8,10 +8,6 @@ const app = getApp();
 function setOption(chart) {
   const option = {
     //定义图标的标题和颜色
-    title: {
-      text: '价格走势',
-      left: 'left'
-    },
     color: ["#37A2DA"],
     //定义你图标的线的类型种类
     legend: {
@@ -100,6 +96,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: "查询商品历史价格"
+    })
     var that = this;
     wx.request({
       url: 'https://tp.adplay.ink/ComparePrice.php',

@@ -7,7 +7,8 @@
     "pages/data/data",
     "pages/circle/circle",
     "pages/message/message",
-    "pages/rank/rank"
+    "pages/rank/rank",
+    "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",
