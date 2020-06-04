@@ -16,7 +16,7 @@
   width: 230rpx;
   text-align: center;
   float: right;
-  background-color: red;
+  background-color: #f56016;
   color: white;
   padding-top: 25rpx;
   font-size: 35rpx;
@@ -26,7 +26,7 @@
   float: left;
   width: 100rpx;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-left: 30rpx;
@@ -34,86 +34,133 @@
 }
 
 .save-img {
-  height: 50rpx;
-  width: 50rpx;
+  margin-top: 20rpx;
+   height: 38rpx;
+   width: 38rpx;
 }
-
 .save-text {
-  font-size: 23rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  padding-bottom: 10rpx;
 }
 
 .swiper {
-  width: 70%;
+  width: 92%;
   height: auto;
-  margin: 20rpx auto;
-}
-.product-title {
-  margin-top: 20rpx;
-  float: left;
-  font-size: 35rpx;
-}
-
-.price {
-  color: red;
-  font-size: 40rpx;
-  margin: 20rpx;
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
 }
 
 .msg {
-  margin-left: 40rpx;
+  margin-left: 20rpx;
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
-
+  flex-direction: row;
 }
-
+.price {
+  color: red;
+  font-size: 40rpx;
+  margin: 20rpx 10rpx 20rpx 10rpx;
+}
 .price-bef {
   color: #9c9c9c;
+  font-size: 24rpx;
+  text-decoration:line-through;
+  margin: 34rpx 0rpx 0rpx 10rpx;
+}
+
+.detail1{
+  
+  height: auto;
+}
+.sale {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  float: left;
+}
+.sale-text {
+  margin-top: 0;
+  color: #ed4b2f;
+  font-size: 30rpx;
+  font-weight: 800;
+}
+.sale-title{
+  float: left;
+  width: 520rpx;
+  margin-left: 20rpx;
+  font-size:10rpx;
+}
+.product-title {
+  position: relative;
   font-size: 30rpx;
 }
 
-.sale {
-  width: 90%;
-  margin: 40rpx auto;
-  font-size: 35rpx;
+.border{
+  width: 100%;
+  height: 10rpx;
+  background-color: #f5f5f5;
 }
-
-.sale-text {
-  float: left;
-}
-
-.to-sale {
-  float: right;
-}
-
 .comments {
   width: 90%;
+  padding-top: 10rpx;
   margin: 10rpx auto;
   font-size: 35rpx;
-  border-bottom: 1rpx solid #e3e3e3;
   padding-bottom: 20rpx;
 }
-
 .comments-text {
+  float: left;
+  font-weight: 400;
+}
+.to-comments {
+  float: right;
+  font-size: 30rpx;
+  color: #f28c7f;
+}
+
+.tag{
+  background-color: white;
+  padding-bottom: 20rpx;
+  padding-left: 34rpx;
+}
+.tag1{
+  padding: 10rpx;
+  border: 1rpx solid #fff1e5;
+  border-radius: 30rpx;
+  background-color:#fff1e5;
+  float: left;
+}
+.tag2{
+  padding: 10rpx;
+  border: 1rpx solid #fff1e5;
+  border-radius: 30rpx;
+  margin-left: 40rpx;
+  background-color: #fff1e5;
   float: left;
 }
 
-.to-comments {
-  float: right;
-  color: red;
-}
-.user-name {
-  color: #9c9c9c;
-  font-size: 30rpx;
-  display: block;
-}
-.user-comment {
-  font-size: 30rpx;
-}
 .comment {
   width: 90%;
   margin: 10rpx auto;
 }
+.comment-usershead{
+  height: 30rpx;
+  width: 30rpx;
+  float: left;
+  margin-top: 4rpx;
+}
+.user-name {
+  color: #9c9c9c;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  display: block;
+  float: left;
+}
+.user-comment {
+  margin-top: 60rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+}
+
 .title {
   font-size: 35rpx;
   padding-bottom: 10rpx;

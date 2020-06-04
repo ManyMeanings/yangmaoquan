@@ -1,7 +1,8 @@
 <!--pages/products/products.wxml-->
 <view class="container">
-		<view class="swiper">
-		<swiper style="height: 450rpx" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		
+	<view class="swiper">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 			<block wx:for="{{imgUrls}}" wx:key="index">
 				<swiper-item >
 					  <image src="{{item}}" data-id='{{index}}' class="slide-image" mode="widthFix"/>
@@ -9,32 +10,65 @@
 			</block>
 		</swiper>
 	</view>
+
+	<view class="detail1">
+			<view class="sale">
+				<text class="sale-text" >{{category}}</text>
+			</view>
+			<view class="sale-title">
+				<text class="product-title">{{name}}</text>
+			</view>
+	</view>
+
 	<view class="msg">
-		<text class="product-title">{{name}}</text>
 		<text class="price">¥{{price}}</text>
-		<text class="price-bef">原价：¥{{pre}}</text>
+		<text class="price-bef">¥{{pre}}</text>
 	</view>
-	<view class="sale">
-		<text class="sale-text" >{{category}}</text>
-		<text class="to-sale">></text>
-	</view>
+
+	<view class="border"></view>
+
 	<view class="comments">
 		<text class="comments-text">好友评价</text>
 		<text class="to-comments">查看全部></text>
 	</view>
-	<view class="comment">
-		<text class="user-name">潇潇**</text>
-		<text class="user-comment">质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错</text>
+
+	<view class="tag">
+			<view class="tag1"><text>品质很不错</text></view>
+			<view class="tag2"><text>品质很不错</text></view>
 	</view>
+
+	<view class="comment">
+			
+			<view>
+			<image class = "comment-usershead" src="/pages/products/images/user-xx.png"></image>
+			</view>
+			
+			<view  class="user-name"><text>潇潇**</text></view>
+			
+			<view class="user-comment">
+				<text >质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错质量很不错
+				</text>
+			</view>
+		
+	</view>
+
 </view>
+
 <view class="detail">
-<text class="title">商品详情</text>
-<text class="desc">{{desc}}</text>
+	<text class="title">商品详情</text>
+	<text class="desc">{{desc}}</text>
 </view>
+
 <view class="bottom-tab">
 	<view class="save">
-		<image src="/images/save.png" class="save-img" mode="aspectFit"></image>
-		<text class="save-text">收藏</text>
+		<view class="save-img1">
+			<image src="/pages/products/images/heart.png" class="save-img"></image>
+		</view>
+
+	  <view class="save-text">
+			<text>收藏</text>
+		</view>
 	</view>
+
 	<view class="buy-btn" bindtap="click">领券购买</view>
 </view>

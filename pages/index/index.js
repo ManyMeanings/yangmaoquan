@@ -13,9 +13,6 @@ Page({
     product_array: "",
   },
   onLoad: function () {
-    wx.setNavigationBarTitle({
-      title: "今日好物"
-    })
     var that = this;
     wx.request({
       url: 'https://tp.adplay.ink/QueryProductByClientId.php',
@@ -84,6 +81,11 @@ Page({
       url: '/pages/search/search'
     })
   },
+  rank:function(option){
+    wx.navigateTo({
+      url: '/pages/rank/rank',
+    })
+  }
   
 
   

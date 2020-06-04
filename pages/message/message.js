@@ -1,4 +1,4 @@
-// pages/users/users.js
+// pages/message/message.js
 Page({
 
   /**

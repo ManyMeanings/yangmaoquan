@@ -28,6 +28,7 @@ Page({
       }
     })
   },
+  
   wxSearchInput: function (e) {
     var that = this
     WxSearch.wxSearchInput(e, that);
