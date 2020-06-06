@@ -1,12 +1,27 @@
 <!--pages/data/data.wxml-->
 <view class="reasult">
-		<image class="img" src="{{img}}"></image>
-		<view class="msg">
-			<text class="name">{{name}}</text>
-			<text class="price">{{price}}</text>
-			<text class="source">{{source}}</text>
-		</view>
+	<image class="img" src="{{img}}"></image>
+	<view class="msg">
+		<text class="name">{{name}}</text>
+		<text class="price">{{price}}</text>
+		<text class="source">{{source}}</text>
+		<view class="to">去购买</view>
 	</view>
+</view>
+<view class="title">
+	<image class="icon" src="/images/chart.png"></image>
+	<text class="title-text">价格走势</text>
+</view>
 <view class="history-price">
-  <ec-canvas wx:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+	<ec-canvas wx:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view class="title">
+	<image class="icon" src="/images/down.png"></image>
+	<text class="title-text">降价早知道</text>
+	<text class="hint">低于此价格会告诉你</text>
+</view>
+<view class="set-price">
+<input class="your-price" value="¥"></input>
+<view class="save">收藏</view>
 </view>
