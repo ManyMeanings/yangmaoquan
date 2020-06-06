@@ -39,7 +39,8 @@ App({
                     wx.setStorageSync('openId', res.data.openid);        
                   }
                 })
-              }, fail: function () {
+              }, 
+              fail: function () {
                 wx.showModal({
                   title: '警告通知',
                   content: '您点击了拒绝授权,将无法正常显示个人信息,点击确定重新获取授权。',

@@ -1,0 +1,61 @@
+/* pages/rank/rank.wxss */
+.product {
+  width: 90%;
+  height: 250rpx;
+  display: flex;
+  margin: 20rpx auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rank {
+  width: 40rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 0;
+  left: 10rpx;
+  z-index: 2;
+}
+
+.product-img {
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 5%;
+}
+
+.product-msg {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 25rpx;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 30rpx;
+}
+
+.money1 {
+  color: #A79A99;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+
+.money2 {
+  font-size: 40rpx;
+  color: red;
+}
+.friends {
+  color: red;
+  font-size: 25rpx;
+}
+.get {
+  height: 50rpx;
+  width: 150rpx;
+  position: relative;
+  top: -20rpx;
+}
+.extra-msg {
+  display: flex;
+  justify-content: space-between;
+}

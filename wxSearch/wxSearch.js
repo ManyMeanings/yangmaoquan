@@ -135,6 +135,7 @@ function wxSearchKeyTap(e, that, callBack) {
     });
     app.globalData.key = temData.value
     console.log(app.globalData.key)
+    wxSearch
     if (typeof (callBack) == "function") {
         callBack();
     }

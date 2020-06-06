@@ -1,0 +1,91 @@
+<!--pages/circle/circle.wxml-->
+<view class="container-self">
+	<view class="background-color"></view>
+	<view class="user-card">
+		<view class="top">
+			<view class="img-border">
+				<open-data class="head" type="userAvatarUrl"></open-data>
+			</view>
+			<view class="box">
+				<view class="first-line">
+					<open-data type="userNickName" lang="zh_CN" class="name"></open-data>
+					<view class="sign">
+						<image class="sign-img" src="/images/sign.png"></image>
+						<view class="sign-text">新手圈主</view>
+					</view>
+				</view>
+				<text decode="true" class="change">&nbsp;&nbsp;圈子操作&nbsp;&nbsp;</text>
+				<view class="clean"></view>
+				<text class="introduce">为了给爱好购物的朋友们一个交流讨论的平台。</text>
+			</view>
+		</view>
+		<view class="middle">
+			<view class="text-border">
+				<text class="hello">早上好，我的ID~：</text>
+				<text class="msg">公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告公告栏信息公告</text>
+			</view>
+		</view>
+		<view class="bottom">
+			<text decode="true" class="tag">&nbsp;&nbsp;#&nbsp;标签&nbsp;&nbsp;</text>
+			<text decode="true" class="tag">&nbsp;&nbsp;#&nbsp;标签&nbsp;&nbsp;</text>
+			<text decode="true" class="tag">&nbsp;&nbsp;#&nbsp;标签&nbsp;&nbsp;</text>
+		</view>
+	</view>
+
+	<view class="search" bindtap="search">
+		<image class="search-img" src="/images/search.png"></image>
+		<text class="search-text">搜索</text>
+	</view>
+
+	<view class="change-tag">
+		<text class="recommend">推荐</text>
+		<text class="new">最新</text>
+	</view>
+
+	<view class="product">
+		<image class="product-img" src="/images/test.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
+			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
+			<view class="product-tags">
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+			</view>
+			<view class="extra-msg">
+				<view>
+					<text class="money2">¥39</text>
+					<text class="money1">¥46.8</text>
+				</view>
+				<view class="friends">
+					<image class="friends-img" src="/images/test.jpg"></image>
+					<image class="friends-img-second" src="/images/test.jpg"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="product">
+		<image class="product-img" src="/images/test.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
+			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
+			<view class="product-tags">
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+			</view>
+			<view class="extra-msg">
+				<view>
+					<text class="money2">¥39</text>
+					<text class="money1">¥46.8</text>
+				</view>
+				<view class="friends">
+					<image class="friends-img" src="/images/test.jpg"></image>
+					<image class="friends-img-second" src="/images/test.jpg"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>
