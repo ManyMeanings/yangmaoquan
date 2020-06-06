@@ -92,6 +92,7 @@ App({
   globalData: {
     info:"",
     product_array:"",
-    jd_product_array:""
+    jd_product_array:"",
+    hotlist:""
   }
 })
