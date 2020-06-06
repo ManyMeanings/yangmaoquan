@@ -11,15 +11,20 @@
         </view> -->
 
             <view wx:if="{{wxSearchData.his[0]}}" class="wxSearchHistoryList">
+            <view class="Delbtn">
+                <text>历史搜索:</text>
+                <image  class="wxSearchHistoryItemDel" data-key="{{item}}" data-key="{{item}}" mode="widthFix" src="/wxSearch/images/wxSearch-icon-delete1.png" bindtap="wxSearchDeleteAll"></image>
+            </view>
+                    
                     <block wx:for="{{wxSearchData.his}}">
                         <view class="wxSearchHistoryItem">
-                            <text style="font-size:26rpx" class="wxSearchHistoryItemText1">历史搜索：  </text>
+                            
                             <text class="wxSearchHistoryItemText" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}
                             </text> 
-                             <button class="wxSearchHistoryItemDel" bindtap="wxSearchDeleteKey" data-key="{{item}}" data-key="{{item}}"><image style="width:100%" src="/wxSearch/images/wxSearch-icon-delete1.png   " mode="widthFix"></image>
-                            </button>
+                            
                         </view>
                     </block>
+                    
                 <view class="wxSearchDeleteAllBtn" bindtap="wxSearchDeleteAll">清除历史</view>
             </view>
                 <view wx:else>
