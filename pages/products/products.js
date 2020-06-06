@@ -112,7 +112,7 @@ Page({
         time:stayTime,   
         id:wx.getStorageSync('openId'),
         product_id:this.data.id,
-        category:this.data.category,
+        category:place,
         visitTime:visitTime,
       },
       success: function (res) {
