@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hotlist: ""
   },
 
   /**
@@ -16,16 +17,17 @@ Page({
       title: "疯抢榜"
     })
     wx.request({
-      url:'https://tp.adplay.ink/QueryHotList_New.php',
-      data:{
-      },
-      success:function(res)
-      {
+      url: 'https://tp.adplay.ink/QueryHotList_New.php',
+      data: {},
+      success: function (res) {
         var hotlist = res.data
         console.log(hotlist)
+        that.setData({
+          hotlist: hotlist
+
+        })
       },
-      fail:function(res)
-      {
+      fail: function (res) {
         console.log(res)
       }
     })
