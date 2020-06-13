@@ -29,7 +29,7 @@
 	</view>
 
 	<view class="products-title">
-		<text class="first">好友在看</text>
+		<!--<text class="first">好友在看</text>-->
 		<text class="second">历史查询</text>
 	</view>
 
@@ -37,27 +37,13 @@
 		<image class="product-img" src="/images/test.jpg"></image>
 		<view class="product-msg">
 			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
-			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
+			<!--<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>-->
       <view class="source">拼多多</view>
 			<view class="extra-msg">
 				<text class="money2">¥199.99</text>
-				<text class="friends">3个好友曾查询</text>
+				<!--<text class="friends">3个好友曾查询</text>-->
 			</view>
 		</view>
 	</view>
-
-  <view class="product">
-		<image class="product-img" src="/images/test.jpg"></image>
-		<view class="product-msg">
-			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
-			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
-      <view class="source">拼多多</view>
-			<view class="extra-msg">
-				<text class="money2">¥199.99</text>
-				<text class="friends">3个好友曾查询</text>
-			</view>
-		</view>
-	</view>
-
-
+	
 </view>

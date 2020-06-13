@@ -52,8 +52,6 @@
 .get {
   height: 50rpx;
   width: 150rpx;
-  position: relative;
-  top: -20rpx;
 }
 .extra-msg {
   display: flex;

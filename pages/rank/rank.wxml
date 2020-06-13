@@ -12,7 +12,7 @@
 				<text class="money1">¥{{item.min_group_price}}</text>
 			</view>
       <view class="extra-msg">
-      <text class="friends">3个好友曾查询</text>
+      <!--<text class="friends">3个好友曾查询</text>-->
       <image class="get" src="/images/get.png"></image>
       </view>
 		</view>
