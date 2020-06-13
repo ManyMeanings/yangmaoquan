@@ -1,19 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/users/users",
     "pages/products/products",
     "pages/search/search",
     "pages/data/data",
     "pages/circle/circle",
-    "pages/message/message",
     "pages/rank/rank",
     "pages/history/history"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f7660f",
-    "navigationBarTitleText": "今 日 好 券",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -29,18 +27,6 @@
         "text": "圈子",
         "iconPath": "/images/circle.png",
         "selectedIconPath": "/images/circle_HL.png"
-      },
-      {
-        "pagePath": "pages/message/message",
-        "text": "消息",
-        "iconPath": "/images/message.png",
-        "selectedIconPath": "/images/message_HL.png"
-      },
-      {
-        "pagePath": "pages/users/users",
-        "text": "我的",
-        "iconPath": "/images/users.png",
-        "selectedIconPath": "/images/users_HL.png"
       }
     ],
     "selectedColor": "#F96C0A",

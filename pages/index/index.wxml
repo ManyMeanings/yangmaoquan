@@ -14,14 +14,14 @@
 		</swiper>
 	</view>
 	<view class="buttons">
-		<view class="button">
+		<!--<view class="button">
 			<image src="/images/icon2.png" class="button-image"></image>
 			<text class="button-text">外卖生活</text>
 		</view>
 		<view class="button">
 			<image src="/images/icon2.png" class="button-image"></image>
 			<text class="button-text">酒店出行</text>
-		</view>
+		</view>-->
 		<view class="button" bindtap="history">
 			<image src="/images/icon3.png" class="button-image"></image>
 			<text class="button-text">查历史价</text>
@@ -34,23 +34,23 @@
 	<view class="title">
 		<image class="icon" src="/images/recommend.png"></image>
 		<text class="title-text">推荐圈子</text>
-		<image class="go" src="/images/go.png"></image>
+		<!--<image class="go" src="/images/go.png"></image>-->
 	</view>
 	<view class="recommend">
 		<view class="circle">
-			<image class="circle-img" src="/images/test.jpg"></image>
-			<text class="cicle-name">圈子名称</text>
-			<text class="friends">16位好友在这里</text>
+			<image class="circle-img" src="/images/circle3.png"></image>
+			<text class="cicle-name">护肤生活馆</text>
+			<!--<text class="friends">16位好友在这里</text>-->
 		</view>
 		<view class="circle">
-			<image class="circle-img" src="/images/test.jpg"></image>
-			<text class="cicle-name">圈子名称</text>
-			<text class="friends">16位好友在这里</text>
+			<image class="circle-img" src="/images/circle2.jpg"></image>
+			<text class="cicle-name">小吃货养生馆</text>
+			<!--<text class="friends">16位好友在这里</text>-->
 		</view>
 		<view class="circle">
-			<image class="circle-img" src="/images/test.jpg"></image>
-			<text class="cicle-name">圈子名称</text>
-			<text class="friends">16位好友在这里</text>
+			<image class="circle-img" src="/images/circle1.jpg"></image>
+			<text class="cicle-name">水果分享馆</text>
+			<!--<text class="friends">16位好友在这里</text>-->
 		</view>
 	</view>
 	<view class="title">
@@ -66,7 +66,7 @@
 					<text class="money2">¥{{item.current_price}}</text>
 					<text class="money1">¥{{item.min_group_price}}</text>
 				</view>
-				<text class="buy-number">99位好友已购买</text>
+				<!--<text class="buy-number">99位好友已购买</text>-->
 			</view>
 		</view>
 	</view>

@@ -43,15 +43,16 @@
 	</view>
 
 	<view class="product">
-		<image class="product-img" src="/images/test.jpg"></image>
+		<image class="product-img" src="/images/circle3.png"></image>
 		<view class="product-msg">
-			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
-			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
+			<text class="product-name">护肤生活馆</text>
+			<text class="product-introduce">护肤达人聚集地</text>
 			<view class="product-tags">
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;化妆品&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;护肤&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;生活&nbsp;&nbsp;</text>
 			</view>
+			<!--
 			<view class="extra-msg">
 				<view>
 					<text class="money2">¥39</text>
@@ -62,19 +63,21 @@
 					<image class="friends-img-second" src="/images/test.jpg"></image>
 				</view>
 			</view>
+			-->
 		</view>
 	</view>
 
 	<view class="product">
-		<image class="product-img" src="/images/test.jpg"></image>
+		<image class="product-img" src="/images/circle2.jpg"></image>
 		<view class="product-msg">
-			<text class="product-name">商品名称商品名称商品名称商品名称商品名称商品名称</text>
-			<text class="product-introduce">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</text>
+			<text class="product-name">小吃货养生馆</text>
+			<text class="product-introduce">吃货聚集地</text>
 			<view class="product-tags">
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
-				<text decode="true" class="tag">&nbsp;&nbsp;标签&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;零食&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;养生&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;吃货&nbsp;&nbsp;</text>
 			</view>
+			<!--
 			<view class="extra-msg">
 				<view>
 					<text class="money2">¥39</text>
@@ -85,6 +88,32 @@
 					<image class="friends-img-second" src="/images/test.jpg"></image>
 				</view>
 			</view>
+			-->
+		</view>
+	</view>
+
+	<view class="product">
+		<image class="product-img" src="/images/circle1.jpg"></image>
+		<view class="product-msg">
+			<text class="product-name">水果分享馆</text>
+			<text class="product-introduce">水果爱好者聚集地</text>
+			<view class="product-tags">
+				<text decode="true" class="tag">&nbsp;&nbsp;水果&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;水果&nbsp;&nbsp;</text>
+				<text decode="true" class="tag">&nbsp;&nbsp;水果&nbsp;&nbsp;</text>
+			</view>
+			<!--
+			<view class="extra-msg">
+				<view>
+					<text class="money2">¥39</text>
+					<text class="money1">¥46.8</text>
+				</view>
+				<view class="friends">
+					<image class="friends-img" src="/images/test.jpg"></image>
+					<image class="friends-img-second" src="/images/test.jpg"></image>
+				</view>
+			</view>
+			-->
 		</view>
 	</view>
 

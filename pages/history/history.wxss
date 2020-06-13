@@ -73,7 +73,7 @@
 
 .products-title {
   font-size: 35rpx;
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20rpx;
@@ -84,22 +84,27 @@
   text-decoration: underline;
 }
 
+.second {
+  color: #ee5940;
+  text-decoration: underline;
+}
+
 .product {
   width: 90%;
-  height: 300rpx;
+  height: 250rpx;
   display: flex;
   margin: 20rpx auto;
   justify-content: space-between;
 }
 
 .product-img {
-  width: 280rpx;
-  height: 280rpx;
+  width: 250rpx;
+  height: 250rpx;
   border-radius: 5%;
 }
 
 .product-msg {
-  width: 56%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   font-size: 25rpx;

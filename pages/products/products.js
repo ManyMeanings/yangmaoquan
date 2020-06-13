@@ -14,7 +14,6 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 500,
-      
   },
 
   /**
@@ -59,6 +58,49 @@ Page({
       })
 
   },
+// 新增  
+imageLoad: function (e) {
+
+  //获取图片真实宽度
+
+  var imgwidth = e.detail.width,
+
+    imgheight = e.detail.height,
+
+    //宽高比
+
+    ratio = imgwidth / imgheight;
+
+  console.log(imgwidth, imgheight)
+
+  //计算的高度值
+
+  var viewHeight = 750 / ratio;
+
+  var imgheight = viewHeight
+
+  var imgheights = this.data.imgheights
+
+  //把每一张图片的高度记录到数组里
+
+  imgheights.push(imgheight)
+
+  this.setData({
+
+    imgheights: imgheights,
+
+  })
+
+},
+
+bindchange: function (e) {
+
+  console.log(e.detail.current)
+
+  this.setData({ current: e.detail.current})
+
+},
+// 新增
   click: function (option) {
     var appId;
     if(place == "P"){
@@ -112,7 +154,7 @@ Page({
         time:stayTime,   
         id:wx.getStorageSync('openId'),
         product_id:this.data.id,
-        category:this.data.category,
+        category:place,
         visitTime:visitTime,
       },
       success: function (res) {

@@ -40,7 +40,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .button-image {
   width: 80rpx;
@@ -57,13 +56,14 @@
   padding-left: 4%;
   width: 100%;
   margin-bottom: 15rpx;
+  display: flex;
+  align-items: center;
 }
 .icon {
   float: left;
   margin-right: 10rpx;
   height: 30rpx;
   width: 25rpx;
-  padding-top: 3rpx;
 }
 .recommend-text {
   float: left;
@@ -76,9 +76,10 @@
 }
 .recommend {
   width: 92%;
-  height: 320rpx;
+  height: 250rpx;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20rpx;
 }
 .circle {
   width: 30%;
@@ -86,7 +87,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 23rpx;
+  justify-content: space-between;
+  font-size: 25rpx;
 }
 .circle-img {
   height: 200rpx;

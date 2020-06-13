@@ -88,7 +88,7 @@ Page({
   },
   history: function (option) {
     wx.navigateTo({
-      url: '/pages/history/history',
+      url: '/pages/search/search',
     })
   }
 })
