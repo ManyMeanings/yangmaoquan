@@ -45,10 +45,13 @@
 }
 
 .swiper {
-  width: 92%;
-  height: auto;
-  margin-left: 40rpx;
+  width: 100%;
   margin-bottom: 20rpx;
+}
+.slide-image{
+  padding-left: 25%;
+  width: 400rpx;
+  height: 400rpx;
 }
 
 .msg {

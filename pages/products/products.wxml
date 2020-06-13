@@ -2,7 +2,7 @@
 <view class="container">
 		
 	<view class="swiper">
-		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 400rpx;">
 			<block wx:for="{{imgUrls}}" wx:key="index">
 				<swiper-item >
 					  <image src="{{item}}" data-id='{{index}}' class="slide-image" mode="widthFix"/>
@@ -27,17 +27,17 @@
 
 	<view class="border"></view>
 
-	<view class="comments">
+	<!-- <view class="comments">
 		<text class="comments-text">好友评价</text>
 		<text class="to-comments">查看全部></text>
-	</view>
+	</view> -->
 
-	<view class="tag">
+	<!-- <view class="tag">
 			<view class="tag1"><text>品质很不错</text></view>
 			<view class="tag2"><text>品质很不错</text></view>
-	</view>
+	</view> -->
 
-	<view class="comment">
+	<!-- <view class="comment">
 			
 			<view>
 			<image class = "comment-usershead" src="/pages/products/images/user-xx.png"></image>
@@ -50,7 +50,7 @@
 				</text>
 			</view>
 		
-	</view>
+	</view> -->
 
 </view>
 

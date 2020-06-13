@@ -11,27 +11,28 @@
         </view> -->
 
             <view wx:if="{{wxSearchData.his[0]}}" class="wxSearchHistoryList">
-            <view class="Delbtn">
-                <text>历史搜索:</text>
-                <image  class="wxSearchHistoryItemDel" data-key="{{item}}" data-key="{{item}}" mode="widthFix" src="/wxSearch/images/wxSearch-icon-delete1.png" bindtap="wxSearchDeleteAll"></image>
-            </view>
-                    
+           
+                <view class="Delbtn">
+                    <text>历史搜索:</text>
+                    <image  class="wxSearchHistoryItemDel" data-key="{{item}}" data-key="{{item}}" mode="widthFix" src="/wxSearch/images/wxSearch-icon-delete1.png" bindtap="wxSearchDeleteAll"></image>
+                </view>
+                        
+                <view class="wxSearchHistoryItem" >
                     <block wx:for="{{wxSearchData.his}}">
-                        <view class="wxSearchHistoryItem">
-                            
-                            <text class="wxSearchHistoryItemText" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item}}
+                            <text class="wxSearchHistoryItemText" bindtap="wxSearchFn" data-key="{{item}}"  >{{item}}
                             </text> 
-                            
-                        </view>
                     </block>
-                    
-                <view class="wxSearchDeleteAllBtn" bindtap="wxSearchDeleteAll">清除历史</view>
+                </view>  
+                <view  class="wxSearchDeleteAllBtn" bindtap="wxSearchDeleteAll">
+                  <text>清除历史</text>
+                </view>
             </view>
-                <view wx:else>
-                    <view class="wxSearchHistoryEmpty">搜索历史为空</view>
-        </view>
+            
+            <view wx:else>
+                <view class="wxSearchHistoryEmpty">搜索历史为空</view>
+            </view>
 
-        <view class="wxSearchHistory" style="display:{{wxSearchData.view.isShowSearchHistory ? 'block':'none'}}">  
+        <!-- <view class="wxSearchHistory" style="display:{{wxSearchData.view.isShowSearchHistory ? 'block':'none'}}">  
                 <view  class="wxSearchTitle">热门搜索</view>
                 <view  class="wxSearchTitle">热门搜索</view>
                 <view  class="wxSearchTitle">热门搜索</view>
@@ -40,7 +41,7 @@
                 <view  class="wxSearchTitle">热门搜索</view>
                 <view  class="wxSearchTitle">热门搜索</view>
                 <view  class="wxSearchTitle">热门搜索</view>
-        </view>
+        </view> -->
 
     </view>
   </view>
