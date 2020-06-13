@@ -107,7 +107,6 @@
 }
 
 .wxSearchHistoryItem{
-<<<<<<< HEAD
   border: 1px solid #eee;
   height: fit-content;
   display: flex;
@@ -126,25 +125,6 @@
   float: left;
   background-color: #f8f8f8;
   color: #a9a9a9;
-=======
-  padding: 10px 5px;
-  border-bottom: 1px solid #eee;
-  display: flex;
-}
-.wxSearchHistoryItemText{
-  flex: 8;
-  font-size: 14px;
-}
-.wxSearchHistoryItemDel{
-  width: auto;
-  height:  auto;
-  flex: 1;
-  /* font-size: 12px;
-  text-align: center;
-  padding: 3px 5px;
-  border: 1px solid #eee;
-  border-radius: 5px; */
->>>>>>> upstream/master
 }
 
 .wxSearchHistoryEmpty{
