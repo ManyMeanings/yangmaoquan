@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    imgUrls: ['/images/test.jpg', '/images/test.jpg', '/images/test.jpg'],
+    imgUrls: [],
     indicatorDots: true,
     vertical: false,
     autoplay: true,
@@ -14,6 +14,7 @@ Page({
   },
   onLoad: function () {
     var that = this;
+    var imgUrls = [];
     wx.request({
       url: 'https://tp.adplay.ink/QueryProductByClientId.php',
       data: {
@@ -21,7 +22,7 @@ Page({
       }, //传参
       success: function (res) {
         that.setData({
-          user_product_array: res.data //设置数据，将表中查询出来的信息传给info
+          user_product_array: res.data, //设置数据，将表中查询出来的信息传给info
         })
         if (res.data == '0') {
           wx.request({
@@ -32,8 +33,12 @@ Page({
             },
             success: function (res) {
               console.log(res.data)
+              imgUrls.push(res.data[5].goods_thumbnail_url);
+              imgUrls.push(res.data[10].goods_thumbnail_url);
+              imgUrls.push(res.data[15].goods_thumbnail_url);
               that.setData({
-                product_array: res.data //设置数据，将表中查询出来的信息传给info
+                product_array: res.data, //设置数据，将表中查询出来的信息传给info
+                imgUrls : imgUrls
               })
             },
             fail: function (err) {
